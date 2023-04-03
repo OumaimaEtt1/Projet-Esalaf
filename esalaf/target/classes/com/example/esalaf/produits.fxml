@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="561.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.ProduitsController">
+   <children>
+      <ImageView fitHeight="561.0" fitWidth="1089.0" layoutX="-159.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/pexels-photo-5632346.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="69.0" layoutX="228.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/cart.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="309.0" layoutY="36.0" text="Gestion des produits" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="27.0" />
+         </font></Label>
+      <AnchorPane layoutX="418.0" layoutY="116.0" prefHeight="417.0" prefWidth="428.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <TableView fx:id="produitTableview" layoutX="-362.0" prefHeight="417.0" prefWidth="823.0">
+              <columns>
+                  <TableColumn fx:id="Id_produit" prefWidth="182.0" text="ID" />
+                <TableColumn fx:id="nom_produit" prefWidth="366.0" text="Produit" />
+                  <TableColumn fx:id="checkbox" prefWidth="214.0" text="Ajouter" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.529411792755127" green="0.4156862795352936" blue="0.8156862854957581" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="20.0" layoutY="36.0" mnemonicParsing="false" onAction="#Back" prefHeight="34.0" prefWidth="84.0" style="-fx-background-color: #b7bae2;" text="Back">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.572549045085907" green="0.5960784554481506" blue="0.8039215803146362" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Cambria" size="17.0" />
+         </font></Button>
+      <TextField fx:id="search" layoutX="597.0" layoutY="36.0" onAction="#ProductSearch" prefHeight="41.0" prefWidth="238.0" promptText="search..." />
+   </children>
+</AnchorPane>

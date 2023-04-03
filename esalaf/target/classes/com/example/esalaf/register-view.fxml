@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.RegisterController">
+   <children>
+      <AnchorPane layoutX="2.0" prefHeight="416.0" prefWidth="406.0" style="-fx-background-color: #DDD4E8;">
+         <children>
+            <Label layoutX="129.0" layoutY="30.0" prefHeight="40.0" prefWidth="149.0" text="Bienvenue">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailField" layoutX="42.0" layoutY="196.0" prefHeight="32.0" prefWidth="329.0" promptText="Adresse mail" />
+            <PasswordField fx:id="passwordField" layoutX="42.0" layoutY="259.0" prefHeight="32.0" prefWidth="329.0" promptText="Password" />
+            <Button layoutX="135.0" layoutY="355.0" mnemonicParsing="false" onAction="#registerButton" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #b3b7f2;" text="Create Account">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5716374516487122" green="0.5940545797348022" blue="0.9078947305679321" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Label layoutX="42.0" layoutY="107.0" text="First Name" />
+            <Label layoutX="42.0" layoutY="173.0" text="Email Address" />
+            <Label layoutX="46.0" layoutY="236.0" text="Password" />
+            <TextField fx:id="firstNameField" layoutX="42.0" layoutY="132.0" prefHeight="32.0" prefWidth="149.0" promptText="First name" />
+            <TextField fx:id="lastNameField" layoutX="226.0" layoutY="132.0" prefHeight="32.0" prefWidth="149.0" promptText="Last name" />
+            <Label layoutX="226.0" layoutY="107.0" text="Last Name" />
+            <Label fx:id="invalidRegister" layoutX="29.0" layoutY="316.0" prefHeight="22.0" prefWidth="370.0" textFill="RED">
+               <font>
+                  <Font name="Book Antiqua" size="17.0" />
+               </font></Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.586951732635498" green="0.5133406519889832" blue="0.6973684430122375" />
+               </color></DropShadow>
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="397.0" fitWidth="424.0" layoutX="411.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Esalaf%20register.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

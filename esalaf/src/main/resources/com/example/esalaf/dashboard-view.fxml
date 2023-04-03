@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1227.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.DashboardController">
+   <children>
+      <ImageView fitHeight="680.0" fitWidth="1301.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #f2e7e7;">
+         <image>
+            <Image url="@images/pexels-photo-5632346.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="19.0" layoutY="31.0" prefHeight="620.0" prefWidth="372.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="155.0" fitWidth="371.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Esalaf.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="59.0" layoutX="87.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/clients2.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="clientbtn" layoutX="160.0" layoutY="295.0" mnemonicParsing="false" onAction="#SwitchViews" prefHeight="47.0" prefWidth="114.0" style="-fx-background-color: #babded;" text="Clients" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.6920077800750732" green="0.7081546187400818" blue="0.9342105388641357" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <ImageView fitHeight="55.0" fitWidth="59.0" layoutX="87.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/credits2.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="creditbtn" layoutX="160.0" layoutY="404.0" mnemonicParsing="false" onAction="#SwitchViews" prefHeight="47.0" prefWidth="114.0" style="-fx-background-color: #babded;" text="Crédits" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.6920077800750732" green="0.7081546187400818" blue="0.9342105388641357" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="136.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/deconnexion.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="logoutbtn" layoutX="172.0" layoutY="562.0" mnemonicParsing="false" onAction="#Logout" prefHeight="27.0" prefWidth="67.0" style="-fx-background-color: #ffffff;" text="Log out">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="49.0" fitWidth="67.0" layoutX="88.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/home.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="homebtn" layoutX="160.0" layoutY="198.0" mnemonicParsing="false" onAction="#SwitchViews" prefHeight="47.0" prefWidth="114.0" style="-fx-background-color: #babded;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.6920077800750732" green="0.7081546187400818" blue="0.9342105388641357" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="homeView" layoutX="531.0" layoutY="38.0" prefHeight="140.0" prefWidth="219.0" style="-fx-background-color: #babded;" visible="false">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="11.0" prefHeight="135.0" prefWidth="560.0">
+               <children>
+                  <ImageView fitHeight="67.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/credits3.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="90.0" layoutY="27.0" text="Crédits">
+                     <font>
+                        <Font name="Cambria Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nbrcredits" layoutX="73.0" layoutY="78.0" prefHeight="28.0" prefWidth="57.0">
+                     <font>
+                        <Font name="Cambria Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="homeView1" layoutX="332.0" layoutY="-5.0" prefHeight="140.0" prefWidth="219.0" style="-fx-background-color: #babded;">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="11.0" prefHeight="126.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="67.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/done.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="90.0" layoutY="27.0" text="Payés">
+                                 <font>
+                                    <Font name="Cambria Bold" size="29.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="creditspayes" layoutX="73.0" layoutY="78.0" prefHeight="28.0" prefWidth="57.0">
+                                 <font>
+                                    <Font name="Cambria Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane fx:id="clientsView" layoutX="408.0" layoutY="31.0" prefHeight="620.0" prefWidth="798.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <ImageView fitHeight="62.0" fitWidth="77.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/clients2.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="clientTableview" layoutX="38.0" layoutY="82.0" onMouseClicked="#ClientSelect" prefHeight="192.0" prefWidth="725.0" style="-fx-background-color: #f3f0f8;">
+              <columns>
+                  <TableColumn fx:id="id_client" minWidth="0.0" prefWidth="115.0" text="ID" />
+                <TableColumn fx:id="clientNom_col" prefWidth="126.0" text="Nom Complet" />
+                <TableColumn fx:id="clientTel_col" minWidth="0.0" prefWidth="101.0" text="Téléphone" />
+                  <TableColumn fx:id="clientMontant_col" minWidth="0.0" prefWidth="115.0" text="Montant de crédit (DH)" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <AnchorPane layoutX="92.0" layoutY="310.0" prefHeight="230.0" prefWidth="605.0" style="-fx-background-color: #CACCE7;">
+               <children>
+                  <TextField fx:id="clientNom" layoutX="172.0" layoutY="26.0" prefHeight="31.0" prefWidth="241.0" promptText="Nom complet" />
+                  <TextField fx:id="clientTel" layoutX="172.0" layoutY="76.0" prefHeight="31.0" prefWidth="241.0" promptText="+212" />
+                  <TextField fx:id="clientMontant" layoutX="172.0" layoutY="131.0" prefHeight="31.0" prefWidth="241.0" promptText="Montant DH" />
+                  <Label layoutX="31.0" layoutY="31.0" text="Nom complet">
+                     <font>
+                        <Font name="Cambria" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="81.0" text="Téléphone">
+                     <font>
+                        <Font name="Cambria" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="136.0" text="Montant de crédit">
+                     <font>
+                        <Font name="Cambria" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="clientSave" layoutX="250.0" layoutY="184.0" mnemonicParsing="false" onAction="#Saveclient" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #b7bae2;" text="Save">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.572549045085907" green="0.5960784554481506" blue="0.8039215803146362" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="Cambria" size="17.0" />
+                     </font></Button>
+                  <Button fx:id="clientDelete" layoutX="475.0" layoutY="76.0" mnemonicParsing="false" onAction="#Delete" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #b7bae2;" text="Delete">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.572549045085907" green="0.5960784554481506" blue="0.8039215803146362" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="Cambria" size="17.0" />
+                     </font></Button>
+                  <Button fx:id="clientClear" layoutX="475.0" layoutY="130.0" mnemonicParsing="false" onAction="#Clear" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #b7bae2;" text="Clear">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.572549045085907" green="0.5960784554481506" blue="0.8039215803146362" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="Cambria" size="17.0" />
+                     </font></Button>
+                  <Button layoutX="475.0" layoutY="25.0" mnemonicParsing="false" onAction="#Update" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #b7bae2;" text="Update">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.572549045085907" green="0.5960784554481506" blue="0.8039215803146362" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="Cambria" size="17.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+            <Button layoutX="261.0" layoutY="562.0" mnemonicParsing="false" onAction="#DeclarerProduit" prefHeight="44.0" prefWidth="248.0" style="-fx-background-color: #9ea3e2;" text="Déclarer les produits achetés">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="Cambria" size="17.0" />
+               </font></Button>
+            <Label layoutX="118.0" layoutY="26.0" prefHeight="34.0" prefWidth="241.0" text="Gestion des clients">
+               <font>
+                  <Font name="Cambria Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="creditsView" layoutX="409.0" layoutY="31.0" prefHeight="620.0" prefWidth="792.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="59.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/credits2.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="creditTableview" layoutX="50.0" layoutY="80.0" prefHeight="509.0" prefWidth="705.0">
+              <columns>
+                <TableColumn fx:id="ID_credit" prefWidth="53.0" text="ID" />
+                <TableColumn fx:id="Nom" prefWidth="77.0" text="Client" />
+                  <TableColumn fx:id="montant_recu" onEditCommit="#edit_recu" prefWidth="75.0" text="Reçu" />
+                  <TableColumn fx:id="montant_restant" prefWidth="75.0" text="Restant" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Label layoutX="85.0" layoutY="30.0" text="Gestion des crédits ">
+               <font>
+                  <Font name="Cambria Bold" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="creditbtn1" layoutX="603.0" layoutY="32.0" mnemonicParsing="false" onAction="#afficherReste" prefHeight="31.0" prefWidth="146.0" style="-fx-background-color: #babded;" text="Afficher le reste" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.6920077800750732" green="0.7081546187400818" blue="0.9342105388641357" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.LoginController">
+   <children>
+      <AnchorPane layoutX="421.0" prefHeight="419.0" prefWidth="367.0" style="-fx-background-color: #DDD4E8;">
+         <children>
+            <TextField id="emailField" fx:id="emailField" layoutX="54.0" layoutY="126.0" prefHeight="37.0" prefWidth="271.0" promptText="Adresse Email">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5647059082984924" green="0.4627451002597809" blue="0.5803921818733215" />
+                     </color>
+                  </DropShadow>
+               </effect></TextField>
+            <Button id="submitButton" layoutX="131.0" layoutY="328.0" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="139.0" style="-fx-background-color: #babded;" text="Se Connecter">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5126096606254578" green="0.5266813039779663" blue="0.7236841917037964" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <PasswordField id="passwordField" fx:id="passwordField" layoutX="57.0" layoutY="206.0" prefHeight="37.0" prefWidth="271.0" promptText="Mot de passe">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5647059082984924" green="0.4627451002597809" blue="0.5803921818733215" />
+                     </color>
+                  </DropShadow>
+               </effect></PasswordField>
+            <Label id="invalidLogin" layoutX="122.0" layoutY="216.0" textFill="RED" />
+            <Label layoutX="123.0" layoutY="40.0" text="Connexion">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="101.0" text="Adresse Email" />
+            <Label layoutX="58.0" layoutY="183.0" text="Mot de passe" />
+            <Label id="invalidLogin" fx:id="invalidLogin" layoutX="9.0" layoutY="270.0" prefHeight="34.0" prefWidth="361.0" textFill="RED">
+               <font>
+                  <Font name="Book Antiqua" size="17.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <ImageView id="brandingImageView" fitHeight="419.0" fitWidth="478.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Esalaf%20(1).png" />
+         </image>
+      </ImageView>
+      <Button layoutX="310.0" layoutY="378.0" mnemonicParsing="false" onAction="#register" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: #DDD4E8;" text="Créer Compte">
+         <font>
+            <Font name="Arial Black" size="11.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
